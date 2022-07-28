@@ -90,11 +90,3 @@ app.delete('/deleteItem', (request, response) => { //Delete a todo list item
 app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
 }) //tells us when port is running and when we're connected to database
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
