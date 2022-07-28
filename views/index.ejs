@@ -18,10 +18,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Todo List: </h1>
-    <ul class="todoItems">
-    <% for(let i=0; i < items.length; i++) {%>
-        <li class="item">
+    <h1>Todo List: </h1> <!-- Main Heading -->
+    <ul class="todoItems"> <!-- Unordered list and assign class to "todoItems" -->
+    <% for(let i=0; i < items.length; i++) {%>  <!-- for loop -->
+        <li class="item"> <!-- A list with the class of "item" -->
             <% if(items[i].completed === true) {%>
                 <span class='completed'><%= items[i].thing %></span>
             <% }else{ %>
@@ -30,18 +30,20 @@
             <span class='fa fa-trash'></span>
         </li>
     <% } %>
-    </ul>
+    </ul>  <!-- Uses if/else conditional to render added todo list items to html page -->
 
     <h2>Left to do: <%= left %></h2>
 
-    <h2>Add A Todo:</h2>
+    <h2>Add A Todo:</h2> <!-- Second Heading -->
 
-    <form action="/addTodo" method="POST">
+    <form action="/addTodo" method="POST"> <!-- Form with POST method which goes to /addTodo -->
         <input type="text" placeholder="Thing To Do" name="todoItem">
         <input type="submit">
     </form>
     
 
-    <script src='js/main.js'></script>
+    <script src='js/main.js'></script> <!-- Links to main.js file which is in the public folder -->
 </body>
 </html>
+Footer
+
